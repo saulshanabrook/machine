@@ -252,8 +252,8 @@ custombox   *        none      Running   tcp://50.134.234.20:2376
 ```
 
 ## Using Docker Machine with Docker Swarm
-Docker Machine can also provision [Swarm](https://github.com/docker/swarm) 
-clusters. This can be used with any driver and will be secured with TLS. 
+Docker Machine can also provision [Swarm](https://github.com/docker/swarm)
+clusters. This can be used with any driver and will be secured with TLS.
 
 > **Note**: This is an experimental feature so the subcommands and
 > options are likely to change in future versions.
@@ -372,7 +372,7 @@ Show the Docker client configuration for a machine.
 
 ```
 $ docker-machine config dev
---tls --tlscacert=/Users/ehazlett/.docker/machines/dev/ca.pem --tlscert=/Users/ehazlett/.docker/machines/dev/cert.pem --tlskey=/Users/ehazlett/.docker/machines/dev/key.pem -H tcp://192.168.99.103:2376
+--tls=true --tlscacert=/Users/ehazlett/.docker/machines/dev/ca.pem --tlscert=/Users/ehazlett/.docker/machines/dev/cert.pem --tlskey=/Users/ehazlett/.docker/machines/dev/key.pem -H tcp://192.168.99.103:2376
 ```
 
 #### env
